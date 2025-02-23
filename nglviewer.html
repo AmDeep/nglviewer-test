@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modified Embedded Shiny App</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 89vh;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+        .overlay-button {
+            position: absolute;
+            top: 0px; /* Adjust to match GitHub icon position */
+            right: 10px;
+            width: 100px;  /* Adjust to match icon size */
+            height: 80px;
+            background: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="shiny-app" src="https://niels-van-der-velden.shinyapps.io/shinyNGLVieweR/"></iframe>
+    
+    <!-- Invisible button overlay -->
+    <div class="overlay-button" onclick="window.open('https://yourcustomsite.com', '_blank')"></div>
+</body>
+</html>
